@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "com.github.jikoo"
-version = "1.0.5"
+version = (findProperty("pluginVersion") as String?) ?: "1.0.5"
 
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(21))
